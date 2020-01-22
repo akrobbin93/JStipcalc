@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <image id= "tipJar" src="tipping.jpg">
+    <h2>How Much Was Your Bill?</h2>
+    <input type="text" id="BillAmount" placeholder="Bill Amount"><br>
+    <h2>How Was Your Service?</h2>
+    <select id="Quality">
+      <option disabled selected value = "0">--Choose an Option--</option>
+      <option value = "0.3">30% - Excellent</option>
+      <option value = "0.25">25% - Great</option>
+      <option value = "0.2">20% - Above Average</option>
+      <option value = "0.15">15% - Average</option>
+      <option value = "0.10">10% - Below Average</option>
+      <option value = "0.05">5%  -Terrible</option>
+    </select><br>
+    <h2>How Many People Are In Your Party?</h2>
+    <input type="text" id="PartySize" placeholder="Number of People"><br>
+
+    <button onclick = "calculate()">Calculate Tip!!</button><br>
+    <h2>Tip Amount: </h2>
+    <h2 id="tip">0.00</h2>
+
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
